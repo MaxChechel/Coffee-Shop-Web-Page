@@ -1,16 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    background:linear-gradient(rgba(8, 8, 8, 0.945),rgba(3, 3, 3, 0.267)),
-    url(coffee-photo.jpeg) no-repeat;
-    background-size: cover;
-    height: 100vh;
     font-family: "Montserrat";
 }
+
+/******** Navbar ********/
 
 .navbar {
     margin: 0 10%;
@@ -31,8 +23,18 @@ body {
     margin-right: 5%;
 }
 
+/******** Header ********/
+
+.header {
+    background:linear-gradient(rgba(8, 8, 8, 0.945),rgba(3, 3, 3, 0.267)),
+    url(coffee.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+}
+
 .container-fluid {
-    height: calc(100vh - 7%) ;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -40,13 +42,42 @@ body {
 }
 
 .coffee-logo {
-    width: 45%;
+    max-width: 45%;
 }
 
-h4 {
+.container-fluid h4 {
     color: #fff;
     font-weight: 300;
     text-transform: capitalize;
     letter-spacing: 1px;
     margin-top: -15px;
+}
+
+/******** Menu ********/
+.menu {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu h2 {
+    font-weight: 400;
+}
+
+.menu h5 {
+    text-align: center;
+}
+
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.menu img {
+    height: 10rem;
+    opacity: .85;
 }
